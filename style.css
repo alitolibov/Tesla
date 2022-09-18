@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+@font-face {
+    font-family: 'Gilroy 400';
+    src: url(./font/Gilroy-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Gilroy 500';
+    src: url(./font/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Gilroy 600';
+    src: url(./font/Gilroy-Semibold.ttf);
+}
+
+@font-face {
+    font-family: 'Gilroy 700';
+    src: url(./font/Gilroy-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.container {
+    margin: 0 auto 123px;
+    outline: none;
+}
+
+.imgs {
+    position: relative;
+}
+
+.tesla-box {
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+
+.video {
+    width: fit-content;
+    height: 797px;
+    background-position: center;
+    background-color: white;
+    z-index: 9;
+    display: block;
+    transition: 500ms;
+}
+.active{
+    animation: wrap 3s ease;
+}
+.activeVideo {
+    animation: wraper 3s ease;
+}
+.activeposition {
+    animation: wrapper 3s ease;
+}
+@keyframes wraper{
+    0%{
+        height: 797px;
+    }
+    100%{
+        height: 4782px;
+    }
+}
+@keyframes wrapper{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: -1800px;
+    }
+}
+
+/* @keyframes wrap{
+    0%{
+        height: 232px;
+    }
+    25%{
+        height: 464px;
+    } 
+    50%{
+        height: 696px;
+    }
+    75%{
+        height: 928px;
+    }
+    100%{
+        height: 1160px;
+    }
+} */
+.videoNoActive {
+    display: none;
+}
+
+.video1 {
+    width: fit-content;
+    height: 797px;
+    background-position: center;
+    background-color: white;
+    z-index: 9;
+    display: none;
+    transition: 500ms;
+}
+
+.videoActive {
+    display: block;
+}
+
+.move {
+    width: fit-content;
+    height: 727px;
+    background-position: center;
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    transform: translateX(-50%);
+    display: none;
+    transition: 500ms;
+}
+
+.moveActive {
+    display: block;
+}
+.img-as {
+    height: 232px;
+    position: absolute;
+    top: -516px;
+    left: 523px;
+    user-select: none;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 55px;
+    border-top-right-radius: 42px;
+    transition: 500ms;
+    zoom: initial;
+}
+
+.imges {
+    position: relative;
+}
+
+.t1 {
+    font-family: 'Gilroy 500';
+    font-size: 20px;
+    line-height: 24px;
+    color: #707070;
+    position: absolute;
+}
+
+.text {
+    width: 110px;
+    height: 24px;
+    left: 596px;
+    top: 747px;
+}
+
+.t2 {
+    font-family: 'Gilroy 700';
+    font-size: 64px;
+    line-height: 79px;
+    position: absolute;
+}
+
+.km {
+    width: fit-content;
+    height: 79px;
+    left: 596px;
+    top: 783px;
+}
+
+.price {
+    width: 50px;
+    height: 24px;
+    left: 890px;
+    top: 747px;
+}
+
+.prices {
+    width: 243px;
+    height: 79px;
+    left: 890px;
+    top: 783px;
+}
+
+.t3 {
+    position: absolute;
+    font-family: 'Gilroy 500';
+    font-size: 14px;
+    line-height: 17px;
+    color: #707070;
+}
+
+.text2 {
+    width: 145px;
+    height: 17px;
+    left: 290px;
+    top: 917px;
+}
+
+.speed {
+    position: absolute;
+    width: 196px;
+    height: 59px;
+    left: 290px;
+    top: 935px;
+    font-family: 'Gilroy 700';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 59px;
+}
+
+.top {
+    background-image: url(./img/top.png);
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 500px;
+    top: 931px;
+    cursor: pointer;
+}
+
+.bottom {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 500px;
+    top: 959px;
+    background-image: url(./img/bottom.png);
+    cursor: pointer;
+}
+
+.text3 {
+    width: 160px;
+    height: 17px;
+    left: 576px;
+    top: 917px;
+}
+
+.gradus {
+    position: absolute;
+    width: 73px;
+    height: 59px;
+    left: 576px;
+    top: 935px;
+    font-family: 'Gilroy 700';
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.top2 {
+    background-image: url(./img/top.png);
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 770px;
+    top: 926px;
+    cursor: pointer;
+}
+
+.bottom2 {
+    background-image: url(./img/bottom.png);
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 770px;
+    top: 954px;
+    cursor: pointer;
+}
+
+.text4 {
+    position: absolute;
+    width: 41px;
+    height: 17px;
+    left: 846px;
+    top: 917px;
+}
+
+.top3 {
+    background-image: url(./img/top.png);
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 926px;
+    top: 931px;
+    cursor: pointer;
+}
+
+.bottom3 {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 926px;
+    top: 959px;
+    background-image: url(./img/bottom.png);
+    cursor: pointer;
+}
+
+.btnNoActive {
+    cursor: not-allowed;
+    filter: invert(50%);
+}
+
+.disk {
+    position: absolute;
+    width: 46px;
+    height: 59px;
+    left: 846px;
+    top: 935px;
+    font-family: 'Gilroy 700';
+    font-style: normal;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.text5 {
+    width: 90px;
+    height: 17px;
+    left: 1002px;
+    top: 917px;
+}
+
+
+.off {
+    background-image: url(./img/off.png);
+    cursor: pointer;
+    position: absolute;
+    width: 39px;
+    height: 24px;
+    left: 1002px;
+    top: 942px;
+    transition: 500ms;
+}
+
+.text6 {
+    width: 130px;
+    height: 17px;
+    left: 1146px;
+    top: 917px;
+}
+
+.off1 {
+    background-image: url(./img/off.png);
+    cursor: pointer;
+    position: absolute;
+    width: 39px;
+    height: 24px;
+    left: 1146px;
+    top: 942px;
+    transition: 500ms;
+}
+
+.text7 {
+    position: absolute;
+    width: 107px;
+    height: 17px;
+    left: 1330px;
+    top: 917px;
+}
+
+.off2 {
+    background-image: url(./img/off.png);
+    cursor: pointer;
+    position: absolute;
+    width: 39px;
+    height: 24px;
+    left: 1330px;
+    top: 942px;
+    transition: 500ms;
+}
+
+.on2 {
+    background-image: url(./img/on.png);
+}
+
+.on3 {
+    background-image: url(./img/on.png);
+}
